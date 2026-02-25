@@ -1,4 +1,4 @@
-FROM bitnami/postgresql:18
+FROM bitnami/postgresql:latest
 USER root
 RUN install_packages build-essential git && \
     cd /tmp && git clone https://github.com/pgvector/pgvector.git && \
